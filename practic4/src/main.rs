@@ -14,7 +14,7 @@ fn main() {
         result.push('\n'); 
     }
 
-    // Нижняя часть ромба
+    
     for i in (0..SIZE - 1).rev() {
         for _ in 0..(SIZE - i - 1) {
             result.push(' '); 
