@@ -1,29 +1,29 @@
-const SIZE: usize = 5; // Размер ромба
+const SIZE: usize = 5; 
 
 fn main() {
     let mut result = String::new();
 
-    // Верхняя часть ромба
+   
     for i in 0..SIZE {
         for _ in 0..(SIZE - i - 1) {
-            result.push(' '); // Добавляем пробелы перед *
+            result.push(' '); 
         }
         for _ in 0..(2 * i + 1) {
-            result.push('*'); // Добавляем звездочки
+            result.push('*'); 
         }
-        result.push('\n'); // Переход на новую строку
+        result.push('\n'); 
     }
 
     // Нижняя часть ромба
     for i in (0..SIZE - 1).rev() {
         for _ in 0..(SIZE - i - 1) {
-            result.push(' '); // Добавляем пробелы перед *
+            result.push(' '); 
         }
         for _ in 0..(2 * i + 1) {
-            result.push('*'); // Добавляем звездочки
+            result.push('*'); 
         }
-        result.push('\n'); // Переход на новую строку
+        result.push('\n'); 
     }
 
-    print!("{}", result); // Используем print! один раз
+    print!("{}", result); 
 }
